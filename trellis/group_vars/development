@@ -3,16 +3,16 @@ mysql_root_password: devpw
 web_user: vagrant
 
 wordpress_sites:
-  example.com:
+  jackalope.io:
     site_hosts:
-      - example.dev
-    local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
+      - jackalope.dev
+    local_path: '../site' # path targeting local Bedrock site directory (relative to Ansible root)
     repo: git@github.com:roots/bedrock.git
     site_install: true
-    site_title: Example Site
+    site_title: Jackalope Dev
     admin_user: admin
     admin_password: admin
-    admin_email: admin@example.dev
+    admin_email: admin@jackalope.dev
     multisite:
       enabled: false
       subdomains: false
@@ -23,8 +23,8 @@ wordpress_sites:
       duration: 30s
     system_cron: true
     env:
-      wp_home: http://example.dev
-      wp_siteurl: http://example.dev/wp
+      wp_home: http://jackalope.dev
+      wp_siteurl: http://jackalope.dev/wp
       wp_env: development
       db_name: example_dev
       db_user: example_dbuser
