@@ -27,10 +27,10 @@ Vagrant.configure('2') do |config|
   config.ssh.forward_agent = true
 
   # Required for NFS to work, pick any local IP
-  config.vm.network :private_network, ip: '192.168.50.5'
+  config.vm.network :private_network, ip: '104.236.171.175'
 
   hostname, *aliases = wordpress_sites.flat_map { |(_name, site)| site['site_hosts'] }
-  config.vm.hostname = hostname
+  config.vm.hostname = "test5"
   www_aliases = ["www.#{hostname}"] + aliases.map { |host| "www.#{host}" }
 
   if Vagrant.has_plugin? 'vagrant-hostsupdater'

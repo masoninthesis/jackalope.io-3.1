@@ -3,7 +3,7 @@ mysql_root_password: devpw
 web_user: vagrant
 
 wordpress_sites:
-  jackalope.io:
+  Jackalope.io:
     site_hosts:
       - jackalope.dev
     local_path: '../site' # path targeting local Bedrock site directory (relative to Ansible root)
