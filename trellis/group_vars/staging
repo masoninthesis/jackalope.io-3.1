@@ -36,7 +36,7 @@ wordpress_sites:
       duration: 30s
     system_cron: true
     env:
-      wp_home: http:/104.236.164.48
+      wp_home: http://104.236.164.48
       wp_siteurl: http://104.236.164.48/wp
       wp_env: staging
       db_name: example_staging
