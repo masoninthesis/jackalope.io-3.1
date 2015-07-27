@@ -1,9 +1,14 @@
 mysql_root_password: productionpw
 
+github_ssh_keys:
+  - username: masoninthesis
+    authorized:
+      - "{{ web_user }}"
+
 wordpress_sites:
   example.com:
     site_hosts:
-      - example.com
+      - 45.55.27.4
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     repo: git@github.com:roots/bedrock.git
     branch: master
