@@ -1,6 +1,6 @@
 # Not used. Vagrant generates its own hosts file automatically and uses it
 [web]
-127.0.0.1
+104.236.164.48
 
 [development:children]
 web

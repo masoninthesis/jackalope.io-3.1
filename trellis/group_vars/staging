@@ -8,7 +8,7 @@ github_ssh_keys:
 wordpress_sites:
   jackalope.dev:
     site_hosts:
-      - 45.55.27.4
+      - 104.236.164.48
     local_path: '../site' # path targeting local Bedrock site directory (relative to Ansible root)
     repo: git@github.com:masoninthesis/jackalope.io-3.1
     branch: master
@@ -23,8 +23,8 @@ wordpress_sites:
       duration: 30s
     system_cron: true
     env:
-      wp_home: http://45.55.27.4
-      wp_siteurl: http://45.55.27.4/wp
+      wp_home: http:/104.236.164.48
+      wp_siteurl: http://104.236.164.48/wp
       wp_env: staging
       db_name: example_staging
       db_user: example_dbuser
